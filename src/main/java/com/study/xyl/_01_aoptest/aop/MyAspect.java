@@ -1,4 +1,4 @@
-package com.study.xyl.aoptest.aop;
+package com.study.xyl._01_aoptest.aop;
 
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.*;
@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 @Aspect
 public class MyAspect {
 
-    @Pointcut("execution(* com.example.aoptest.service.MyService.*(..))")
+    @Pointcut("execution(* com.study.xyl._01_aoptest.service.MyService.*(..))")
     public void myPointcut() {
     }
 

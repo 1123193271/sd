@@ -1,9 +1,7 @@
-package com.study.xyl.aoptest;
+package com.study.xyl._01_aoptest;
 
-import com.study.xyl.aoptest.service.MyService;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.study.xyl._01_aoptest.service.MyService;
 import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.AutoConfigureOrder;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
 

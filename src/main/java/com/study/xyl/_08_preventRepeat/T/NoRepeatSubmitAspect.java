@@ -57,7 +57,7 @@ public class NoRepeatSubmitAspect {
         ValueOperations<String, Object> ops = redisTemplate.opsForValue();
         long lockTime = repeatSubmit.lockTime();
         Boolean b = ops.setIfAbsent(key, "1", lockTime, TimeUnit.SECONDS);
-        if (!b) {
+        if (Boolean.FALSE.equals(b)) {
             throw new RuntimeException("请勿重复请求");
         }
         log.info("环绕通知执行前");

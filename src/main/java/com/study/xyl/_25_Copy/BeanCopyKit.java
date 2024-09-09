@@ -34,7 +34,6 @@ public class BeanCopyKit {
         ExamplePO examplePO = new ExamplePO();
         Map<String, String> example = new HashMap<>();
         example.put("id", "001");
-//        example.put("code", "001");
         example.put("name", "小红");
         example.put("grade", "100分");
         example.put("age", "22");

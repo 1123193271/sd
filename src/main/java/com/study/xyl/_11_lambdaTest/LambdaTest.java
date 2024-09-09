@@ -37,9 +37,7 @@ public class LambdaTest {
     public static void main(String[] args) {
         LambdaTest object = getObject(LambdaTest::new);
         object.apply(1000.0, System.out::println);
-        String newStr = object.handler("abc", (str) -> {
-            return str.toUpperCase(Locale.ROOT);
-        });
+        String newStr = object.handler("abc", (str) -> str.toUpperCase(Locale.ROOT));
         AuthOrgEnum.valueOf("name");
         AuthOrgEnum[] values = AuthOrgEnum.values();
 

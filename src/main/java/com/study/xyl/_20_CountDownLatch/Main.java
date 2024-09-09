@@ -11,9 +11,10 @@ public class Main {
                     Thread.sleep((long) (Math.random() * 1000));
                 } catch (InterruptedException e) {
                     throw new RuntimeException(e);
+                } finally {
+                    countDownLatch.countDown();
                 }
                 System.out.println("Task Completed by " + Thread.currentThread().getName());
-                countDownLatch.countDown();
             }).start();
         }
         countDownLatch.await();
